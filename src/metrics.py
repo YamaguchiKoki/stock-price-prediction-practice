@@ -10,6 +10,8 @@ def regression_metrics(estimator, X, y):
     }])
 
 def classification_metrics(estimator, X, y, threshold=0.5):
+    """分類モデルの評価指標を計算する"""
+    # predictメソッドは確率を返すように実装する
     y_pred_proba = estimator.predict(X)
     y_pred = (y_pred_proba >= threshold).astype(int)
 

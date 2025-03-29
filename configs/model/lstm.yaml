@@ -1,0 +1,5 @@
+name: lstm
+hidden_units: 64
+learning_rate: 0.001
+epochs: 20
+batch_size: 32

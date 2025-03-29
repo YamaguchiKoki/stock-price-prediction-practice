@@ -12,7 +12,6 @@ class ModelXGB(Model):
 
         # ハイパーパラメータの取得と除去
         params = dict(self.params)
-        print(params)
         num_round = params.pop('num_round', 1000)
         early_stopping_rounds = params.pop('early_stopping_rounds', None)
 

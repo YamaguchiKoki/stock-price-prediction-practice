@@ -1,0 +1,5 @@
+defaults:
+  - model: xgb
+
+seed: 42
+target_col: Up
